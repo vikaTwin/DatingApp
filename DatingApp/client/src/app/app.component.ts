@@ -10,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'The Dating App';
-  constructor(private accountService: AccountService) {}
   users: any;
+  
+  constructor(private accountService: AccountService) {}
 
   ngOnInit() {
     this.setCurrentUser();
